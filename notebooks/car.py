@@ -4,7 +4,8 @@ import plotly.graph_objects as go  # Importación de plotly.graph_objects como g
 import plotly.express as px  # Importación de ploty.express como px
 
 # Leer los datos del archivo CSV
-car_data = pd.read_csv('vehicles_us.csv')
+car_data = pd.read_csv(
+    'C:\\Users\\Joha\\Downloads\\Ejercicio_sprint_7\\project_s7\\notebooks\\vehicles_us.csv')
 
 # Visualización de algunos datos del archivo
 car_data.head(10)
