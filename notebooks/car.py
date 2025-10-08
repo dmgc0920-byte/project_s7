@@ -10,6 +10,12 @@ car_data = pd.read_csv(
 # Visualización de algunos datos del archivo
 car_data.head(10)
 
+# crear una casilla de verificación
+build_histogram = st.checkbox('Construir un histograma')
+
+if build_histogram:  # si la casilla de verificación está seleccionada
+    st.write('Construir un histograma para la columna odómetro')
+
 # Crear un botón en la aplicación Streamlit para el histograma
 hist_button = st.button('Construir histograma')
 
