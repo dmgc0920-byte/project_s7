@@ -36,6 +36,12 @@ if hist_button:
     # 'use_container_width=True' ajusta el ancho del gráfico al contenedor
     st.plotly_chart(fig, use_container_width=True)
 
+# crear una casilla de verificación
+build_scatter = st.checkbox('Construir un gráfico de dispersión')
+
+if build_scatter:  # si la casilla de verificación está seleccionada
+    st.write('Construir un gráfico de dispersión para la columna odómetro')
+
 # Crear botón en la aplicación Streamlit para el gráfico de dispersión
 disp_button = st.button('Construir un gráfico de dispersión')
 
