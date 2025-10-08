@@ -10,6 +10,9 @@ car_data = pd.read_csv(
 # Visualización de algunos datos del archivo
 car_data.head(10)
 
+# Titulo del aplicativo
+st.header('Gráficos para la columna odómetro')
+
 # crear una casilla de verificación
 build_histogram = st.checkbox('Construir un histograma')
 
@@ -48,7 +51,7 @@ disp_button = st.button('Construir un gráfico de dispersión')
 # Lógica a ejecutar cuando se hace clic en el botón
 if disp_button:
     # Escribir un mensaje en la aplicación
-    st.write('Creación de un gráfico de dispersión para el conjunto de datos de anuncios de venta de coches')
+    st.write('Creación de un gráfico de dispersión para la columna odómetro')
 
     # Crear un histograma utilizando plotly.graph_objects
     # Se crea una figura vacía y luego se añade un rastro de histograma
